@@ -138,9 +138,6 @@ for /l %%d in (0,1,7) do (
 			if not exist %b2eprogrampathname%\Output\!texturetype[%%n]!\%shortDIR%\!nation[%%d]!\images mkdir %b2eprogrampathname%\Output\!texturetype[%%n]!\%shortDIR%\!nation[%%d]!\images
 			rem check for file extension, anything other than png might not be compatible with the software used so png is the only accepted one.
 			if %%~xG==.png (
-				rem get Imagemagick to detect the width and height of the input texture so that it can create textures for 1024x512 (non square) textures which uses the output of RGBA4444 and pvr file
-				rem if there is alternate ways to get the height and width of the input texture than imagemagick is not needed.
-				rem echo !texturetype[%%n]!
 				copy /y "%myDIR%\%shortDIR%\!nation[%%d]!\images\%%G" "%b2eprogrampathname:~0,2%\Texture_Cache"
 				if !resizes!==2 (
 					if !texturetype[%%n]!==PC_DX11 (
