@@ -3,6 +3,7 @@ Simple WoTB Texture Converter, Based off Windows CMD script.
 
 Used programs within this script are at folder 'Included'
 
+<<<<<<< HEAD
 #Feature of this Texture Converter
 - Ability to convert .png files to all WoTB Support Textures
 	- Mali (RGBA8888)
@@ -19,3 +20,9 @@ Used programs within this script are at folder 'Included'
 
 #Complie
 Use the enclosed Bat2exe converter, which you will have to reset the included files path (because it's absolute path), and the details of the files and such.
+=======
+# Current Issues to deal with:
+- T71's Texture are all in pvr (rbga4444) regardless of GPU
+  - either force read it's expected format using .tex
+  - create exceptional case for T71
+>>>>>>> origin/master
