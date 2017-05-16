@@ -18,9 +18,4 @@ Used programs within this script are at folder 'Included'
 - The script first convert the current .png to every single available texture formate allowed in Blitz, then move onto the next texture.
 
 # Complie
-Use the enclosed Bat2exe converter, which you will have to reset the included files path (because it's absolute path), and the details of the files and such.
-
-# Current Issues to deal with:
-- T71's Texture are all in pvr (rbga4444) regardless of GPU
-  - either force read it's expected format using .tex
-  - create exceptional case for T71
+Use the enclosed Bat to exe converter, which you will have to reset the included files path (because it's absolute path), and the details of the files and such.
