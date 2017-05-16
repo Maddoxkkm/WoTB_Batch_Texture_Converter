@@ -2,7 +2,7 @@
 color F1
 setlocal enabledelayedexpansion
 
-set Version=V 1.3.0
+set Version=V 1.3.1
 
 Title Maddox's Batch Tank Texture Converter !version!
 Echo -------------------------
@@ -132,7 +132,7 @@ mkdir %b2eprogrampathname:~0,2%\Texture_Cache
 for /l %%d in (0,1,7) do (
 	rem for each texture png in each folder
 	For /f %%G in ('dir /b %myDIR%\%shortDIR%\!nation[%%d]!\images\') DO (
-		rem for each GPU (5 for now)
+		rem for each GPU (6 for now)
 		for /l %%n in (0,1,5) do ( 
 			if not exist %b2eprogrampathname%\Output\!texturetype[%%n]!\%shortDIR%\!nation[%%d]!\images mkdir %b2eprogrampathname%\Output\!texturetype[%%n]!\%shortDIR%\!nation[%%d]!\images
 			rem check for file extension, anything other than png might not be compatible with the software used so png is the only accepted one.
@@ -151,7 +151,7 @@ for /l %%d in (0,1,7) do (
 				) else (
 					rem for all other texture types
 					%CLI% -i %b2eprogrampathname:~0,2%\Texture_Cache\%%G -dither -m -f !texture[%%n]! -o %b2eprogrampathname%\Output\!texturetype[%%n]!\%shortDIR%\!nation[%%d]!\images\%%~nG.!extension[%%n]! )
-				copy /y %b2eincfilepath%\!texturetype[%%n]!.tex %b2eprogrampathname%\Output\!texturetype[%%n]!\%shortDIR%\!nation[%%d]!\images\%%~nG.tex\
+				copy /y %b2eincfilepath%\!texturetype[%%n]!.tex %b2eprogrampathname%\Output\!texturetype[%%n]!\%shortDIR%\!nation[%%d]!\images\%%~nG.tex
 				Echo Copied tex file
 			)
 		)
