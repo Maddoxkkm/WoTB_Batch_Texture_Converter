@@ -91,7 +91,7 @@ set compressonator="%b2eincfilepath%\TheCompressonator.exe"
 if exist %compressonator% (
 	echo Compressonator Module Detected....
 	) else (
-	Echo "Compressonator 1.5.0 is not installed, please download from http://developer.amd.com/tools-and-sdks/archive/games-cgi/the-compressonator/ and install in default directory"
+	Echo "Compressonator is not found, please make sure you got the correct files complied into this exe"
 	pause
 	exit ) 
 
@@ -102,7 +102,7 @@ if exist %CLI% (
 	ECHO Ready to begin.... 
 	if exist %b2eprogrampathname%\Output rd /s /q %b2eprogrampathname%\Output
 ) else ( 
-	ECHO "PVRTexToolCLI.exe is not installed, please download from https://community.imgtec.com/developers/powervr/installers/ and install in default directory"
+	ECHO "PVRTexToolCLI.exe is not found, please make sure you got the correct files complied into this exe"
 	pause
 	Exit )
 
