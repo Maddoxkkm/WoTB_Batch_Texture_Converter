@@ -1,8 +1,6 @@
 # WoTB_Batch_Texture_Converter
 Simple WoTB Texture Converter, Based off Windows CMD script.
 
-Used programs within this script are at folder 'Included'
-
 # Feature of this Texture Converter
 - Ability to convert .png files to all WoTB Support Textures
 	- Mali (RGBA8888)
