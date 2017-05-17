@@ -23,11 +23,17 @@ rem echo - the specifications of the encoding used for the mentioned textures ar
 echo - any editing and redistribution of this tool must first obtain my permission.
 echo -------------------------
 pause
+
 rem echo %b2eincfilepath%
 rem %b2eincfilepath% is where the exe content is extracted inside the temp folder
+if not defined %b2eincfilepath% ( set "b2eincfilepath=%cd%\converter_files" )
+echo !b2eincfilepath!
 
-rem echo %b2eprogrampathname%
+rem echo b2eprogrampathname
 rem %b2eprogrampathname% is where the exe is started
+if not defined %b2eprogrampathname% ( set "b2eprogrampathname=%cd%" )
+echo !b2eprogrampathname!
+
 
 rem Mali devices Specifications
 set texturetype[0]=Android_Mali
@@ -124,7 +130,7 @@ if !resizes!==2 (
 echo Invaild Input detected
 goto resize
 :end1
-
+pause 
 rem Main operation
 rem for each nation
 if exist %b2eprogrampathname:~0,2%\Texture_Cache rd /s /q %b2eprogrampathname:~0,2%\Texture_Cache
