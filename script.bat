@@ -2,7 +2,7 @@
 color F1
 setlocal enabledelayedexpansion
 
-set Version=V 1.3.1
+set Version=V 1.3.2
 
 Title Maddox's Batch Tank Texture Converter !version!
 Echo -------------------------
@@ -130,7 +130,7 @@ if !resizes!==2 (
 echo Invaild Input detected
 goto resize
 :end1
-pause 
+
 rem Main operation
 rem for each nation
 if exist %b2eprogrampathname:~0,2%\Texture_Cache rd /s /q %b2eprogrampathname:~0,2%\Texture_Cache

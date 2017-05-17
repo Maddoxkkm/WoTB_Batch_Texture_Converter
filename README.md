@@ -15,11 +15,4 @@ Simple WoTB Texture Converter, Based off Windows CMD script.
 # Details of this Converter
 - Used the .exe from a very old version of the Compressantor just for the Adreno Textures (Sorry I know I shouldn't be putting .exe s in here, but forgive my lack of knowledge on learning how stuff works on Github)
 - The script first convert the current .png to every single available texture formate allowed in Blitz, then move onto the next texture.
-
-# Complie
-Use the enclosed Bat to exe converter, which you will have to reset the included files path (because it's absolute path), and the details of the files and such.
-
-# Things to note
-This Script won't work if you don't convert it into .exe via using Bat to exe converter because two of the path variables depend on the conversion.
-- %b2eincfilepath% is where the "Included" files are extracted inside the "Temp" folders of Windows
-- %b2eprogrampathname% is where the .exe was excuted
+- You can directly download the batch files with the folder and use it, Or you can use the .exe file in the Release area.
