@@ -26,13 +26,11 @@ pause
 
 rem echo %b2eincfilepath%
 rem %b2eincfilepath% is where the exe content is extracted inside the temp folder
-if not defined %b2eincfilepath% ( set "b2eincfilepath=%cd%\converter_files" )
-echo !b2eincfilepath!
+if "%b2eincfilepath%"=="" ( set "b2eincfilepath=%cd%\converter_files" )
 
 rem echo b2eprogrampathname
 rem %b2eprogrampathname% is where the exe is started
-if not defined %b2eprogrampathname% ( set "b2eprogrampathname=%cd%" )
-echo !b2eprogrampathname!
+if "%b2eprogrampathname%"=="" ( set "b2eprogrampathname=%cd%" )
 
 
 rem Mali devices Specifications
