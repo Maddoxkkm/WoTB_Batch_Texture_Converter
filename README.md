@@ -1,4 +1,4 @@
-# WoTB_Batch_Texture_Converter
+# WoTB Batch Texture Converter
 Simple WoTB Texture Converter, Based off Windows CMD script.
 
 # Feature of this Texture Converter
